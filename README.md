@@ -1,35 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Portfolio Page
+[![Netlify Status](https://api.netlify.com/api/v1/badges/581247e3-e161-4c38-8ce1-942a4b7f9007/deploy-status)](https://app.netlify.com/sites/onurbelekportfolio/deploys)
 
-## Getting Started
+## Deployed Link
+Check out the Netlify deployment [here](
+onurbelekportfolio.netlify.app)
 
-First, run the development server:
+## Technologies:
+* Next.js
+* GSAP
+* Tailwind CSS
+* Javascript
+* Sass 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Wins and Challenges 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Wins 
+- Successful deployment to Netlify
+- Website is responsive to all screens and dimensions using tailwind CSS
+- Utilised GSAP to create a cool animation
+- Debugging most of the bugs that I found 
+- Adding a background black tint to make the white text stand out more
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Challenges
+- Difficult to work on this project as I am currently managing my fathers business 7 days a week so I did what I could
+- Understanding GSAP 
+- Understanding Parallax Scrolling 
+- Using Tailwind CSS to make a responsive design
+- Using the countdown for the preloader
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# nextjs-portfolio
+## Future Features
+* In the process of implementing Parallax Scrolling with react-scroll-parallax 
+* Finishing the project section, about section and contact section
