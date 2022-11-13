@@ -2,7 +2,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/581247e3-e161-4c38-8ce1-942a4b7f9007/deploy-status)](https://app.netlify.com/sites/onurbelekportfolio/deploys)
 
 ## Deployed Link
-Check out the Netlify deployment [here](onurbelekportfolio.netlify.app)
+Check out the Netlify deployment [here](https://onurbelekportfolio.netlify.app/)
 
 ## Technologies:
 * Next.js
