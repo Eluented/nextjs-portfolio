@@ -25,7 +25,6 @@ export default function Home() {
 
   const [timer, setTimer] = useState(6)
 
-  console.log(timer)
   const id = useRef(null)
 
 
