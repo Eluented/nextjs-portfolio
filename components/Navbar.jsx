@@ -31,7 +31,7 @@ function Navbar() {
   
   return (
     <header style={{backgroundColor: `${color}`}}className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
-      <nav className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
+      <nav className='max-w-[1280px] m-auto flex justify-between items-center p-4 text-white'>
         <ul>
           <li>
             <h1 style={{color: `${textColor}`}} className='text-3xl font-bold'><Link href="/"><a>Onur Belek</a></Link></h1>
