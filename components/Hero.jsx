@@ -36,7 +36,7 @@ const Hero = ({ heading, message }) => {
           <div className="short-description">
             <p className="mt-1">
               I am a self-taught web developer who is currently attending Sparta
-              Global to become a Java automation engineer.{" "}
+              Global to become a <span className="text-cyan-500 font-bold">Java automation engineer</span>.{" "}
             </p>
 
 
@@ -47,7 +47,7 @@ const Hero = ({ heading, message }) => {
               type="button"
               data-te-ripple-init
               data-te-ripple-color="light"
-              class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-[#0077b5]"
+              class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-500 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-linkedin hover:shadow-linkedin/60 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ const Hero = ({ heading, message }) => {
               type="button"
               data-te-ripple-init
               data-te-ripple-color="light"
-              class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-[#333]"
+              class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-500 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-github hover:shadow-github/60"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const Hero = ({ heading, message }) => {
               type="button"
               data-te-ripple-init
               data-te-ripple-color="light"
-              class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-[#c13584]"
+              class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-500 ease-in-out focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-[#c13584] hover:shadow-lg hover:shadow-instagram/60 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -102,13 +102,15 @@ const Hero = ({ heading, message }) => {
         </div>
 
         {/* IMAGE CONTAINER */}
-        <div className="w-full col-start-8 col-end-12 flex items-center">
+        <div className="w-full col-start-8 col-end-12 flex items-center ">
+          <div className="hover:scale-105 duration-300 ease-in ">
           <Image
             src="/onurS2.png"
             width={500}
             height={500}
-            className="rounded-full"
+            className="rounded-full hover:shadow-2xl hover:shadow-cyan-600/20"
           />
+          </div>
         </div>
       </div>
     </>

@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Timeline from "../components/Timeline";
+import Projects from "../components/Projects";
 
 export default function Home() {
   const [preloader, setPreload] = useState(true);
@@ -144,9 +145,10 @@ export default function Home() {
         <>
           <Navbar />
           <div className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
-            <Hero heading="Full-Stack Developer" message="Recent Graduate" />
+            <Hero />
             <About/>
             <Timeline/>
+            <Projects/>
           </div>
         </>
       )}
