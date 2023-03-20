@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
 
-const Hero = ({ heading, message }) => {
+const Hero = () => {
   return (
     <>
       <div className="h-screen w-full text-slate-100 flex justify-center items-center flex-col xxl:grid xxl:grid-cols-12">

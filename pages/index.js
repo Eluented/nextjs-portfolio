@@ -12,10 +12,6 @@ import Footer from "../components/Footer";
 export default function Home() {
   const [preloader, setPreload] = useState(true);
 
-  const ref = useRef(null);
-
-  const loaderRef = useRef(null);
-
   useEffect(() => {
     if (!preloader) {
       if (typeof window === "undefined" || !window.document) {
