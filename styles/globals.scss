@@ -22,6 +22,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+img {
+  width: 100%;
+  height: auto;
+}
 
 * {
   margin: 0;
@@ -35,7 +39,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--darkblue);
   color: var(--white);
-  overflow-x: hidden;
+
 }
 
 a {
@@ -67,10 +71,10 @@ nav ul li a:before {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -8px;
   width: 0;
-  height: 1px;
-  background-color: #fff;
+  height: 2px;
+  background-color: #06b6d4;
   transition: all ease 0.5s;
 }
 
@@ -209,35 +213,125 @@ h1 {
   }
 }
 
-.custom-img {
-  background-image: url('/assets/onur_grad.jpg');
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
 }
-
-.container {
+.proj-imgbx::before {
+  content: "";
+  background: radial-gradient(at right center, rgb(56, 189, 248), rgb(49, 46, 129));
+  opacity: 0.85;
+  position: absolute;
   width: 100%;
-  height: 100vh;
+  right: 0px;
+  transition: 0.4s ease-in-out;
 }
-
-.image-wrapper{
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
   position: absolute;
-  // width: 100%;
-  // height: 100%;
-  // bottom: 0;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
 }
 
-// .hero {
-//   background-position: 50%;
-// }
-// .image-wrapper img{
-//   width: 100%;
-//   height: 100%;
-// }
-
-.blur {
-  width: 250px;
-  background-color: #030000;
+.background-image-right {
+  top: 20%;
   position: absolute;
-  bottom: -180px;
-  filter: blur(50px);
-  z-index: 999;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
 }
+
+.Toastify__toast--success {
+  border: 1px solid #3A9EA5 !important;
+  border-radius: 50px !important;
+  background: #F0F9FA !important;
+  color: black !important;
+  }
+  .Toastify__toast--success::before {
+  position:relative; 
+  z-index:100000;
+  left:12px;
+  top:6px;
+  }
+  .Toastify__toast--success::after {
+  position: absolute;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 700;
+  left:265px;
+  padding-top: 14px !important;
+  }
+  .Toastify__toast--warning::after {
+  
+  position: absolute;
+  color: #E78326;
+  font-size: 15px;
+  font-weight: 700;
+  left:265px;
+  padding-top: 14px !important;
+  }
+  .Toastify__toast-body {
+  color: #000000 !important   ;
+  font-size: 16px;
+  padding-left: 20px;
+  line-height: 20px;
+  padding: 0px;
+  padding-top: 25px;
+  width: 100% !important;
+  font-weight: 400;
+  margin-left: 25px !important;
+  } 
+  .Toastify__close-button--light {
+    display: none;
+  }
+  
+  .Toastify__toast-body > div:last-child {
+    color: #333333;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .select-input, .select-input > option {
+    color: #171923 !important;
+    
+  }
+  
+  .chakra-select__icon > path {
+    color: #171923 !important;
+  }
+  .form-button{
+    overflow: hidden; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 5rem;
+    padding-right: 5rem; 
+    margin-top: 1rem; 
+    transition-duration: 500ms; 
+    border-radius: 9999px; 
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+  }

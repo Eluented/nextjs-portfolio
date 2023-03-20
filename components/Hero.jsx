@@ -1,6 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { Parallax } from "react-scroll-parallax";
+import React from "react";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
 
@@ -36,10 +34,12 @@ const Hero = ({ heading, message }) => {
           <div className="short-description">
             <p className="mt-1">
               I am a self-taught web developer who is currently attending Sparta
-              Global to become a <span className="text-cyan-500 font-bold">Java automation engineer</span>.{" "}
+              Global to become a{" "}
+              <span className="text-cyan-500 font-bold">
+                Java automation engineer
+              </span>
+              .{" "}
             </p>
-
-
           </div>
           <div className="flex gap-8 mt-3">
             {/* LINKEDIN BUTTON */}
@@ -104,12 +104,12 @@ const Hero = ({ heading, message }) => {
         {/* IMAGE CONTAINER */}
         <div className="w-full col-start-8 col-end-12 flex items-center ">
           <div className="hover:scale-105 duration-300 ease-in ">
-          <Image
-            src="/onurS2.png"
-            width={500}
-            height={500}
-            className="rounded-full hover:shadow-2xl hover:shadow-cyan-600/20"
-          />
+            <Image
+              src="/onurS2.png"
+              width={500}
+              height={500}
+              className="rounded-full hover:shadow-2xl hover:shadow-cyan-600/20"
+            />
           </div>
         </div>
       </div>

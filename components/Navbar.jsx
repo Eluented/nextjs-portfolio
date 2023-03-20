@@ -43,11 +43,11 @@ function Navbar() {
           </li>
 
           <li className='p-4 text-xl'>
-            <Link href="/about-me"><a>About Me</a></Link>
+            <Link href="/"><a>About Me</a></Link>
           </li>
 
           <li className='p-4 text-xl'>
-            <Link href="/portfolio"><a>Portfolio</a></Link>
+            <Link href="/"><a>Portfolio</a></Link>
 
           </li>
         </ul>
@@ -71,11 +71,11 @@ function Navbar() {
             </li>
 
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href="/about-me"><a>About Me</a></Link>
+              <Link href="/"><a>About Me</a></Link>
             </li>
 
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href="/portfolio"><a>Portfolio</a></Link>
+              <Link href="/"><a>Portfolio</a></Link>
 
             </li>
           </ul>

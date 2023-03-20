@@ -8,6 +8,8 @@ import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Timeline from "../components/Timeline";
 import Projects from "../components/Projects";
+import ContactMe from "../components/ContactMe";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [preloader, setPreload] = useState(true);
@@ -149,6 +151,8 @@ export default function Home() {
             <About/>
             <Timeline/>
             <Projects/>
+            <ContactMe/>
+            <Footer/>
           </div>
         </>
       )}

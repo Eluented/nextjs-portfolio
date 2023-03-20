@@ -1,9 +1,5 @@
 import { Parallax } from "react-parallax";
 import { React, useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   return (
@@ -24,8 +20,8 @@ export default function About() {
           className="bg-black/70 h-screen md:min-h-[45rem] xl:h-[50rem]"
         >
           <div className="flex flex-col justify-center items-center w-full h-full">
-            <h1 className="md:text-5xl text-4xl text-center  font-semibold  ">
-              My Goal
+            <h1 className="md:text-5xl text-4xl text-center  font-semibold underline underline-offset-8 decoration-cyan-500 ">
+              Ambition
             </h1>
             <p className="md:text-2xl mt-5 text-center md:px-24 hidden md:block ">
               My ultimate goal is to make a positive impact in the tech industry

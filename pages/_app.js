@@ -1,12 +1,12 @@
-import '../styles/globals.scss'
-import { ParallaxProvider } from 'react-scroll-parallax'
+import "../styles/globals.scss";
+import { ThemeProvider, theme, ChakraProvider } from "@chakra-ui/react";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ParallaxProvider scrollAxis='vertical'>
-            <Component {...pageProps} />
-    </ParallaxProvider>
-  )
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
