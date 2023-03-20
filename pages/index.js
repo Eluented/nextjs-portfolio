@@ -125,7 +125,7 @@ export default function Home() {
             <meta name="keywords" content="Onur Belek" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
-          <ul class="panels">
+          <ul className="panels">
             <li className="panel"></li>
             <li className="panel"></li>
             <li className="panel"></li>
