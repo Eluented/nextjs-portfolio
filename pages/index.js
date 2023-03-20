@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Baffle from "baffle-react";
-import baffle from "baffle";
 import React, { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import Hero from "../components/Hero";
@@ -34,17 +32,6 @@ export default function Home() {
     window.clearInterval(id.current);
     setPreload(false);
   };
-
-  // baffle scramble effect
-  useEffect(() => {
-    const target = baffle(".full-stack-dev");
-    target.set({
-      characters: "░▒< ▒><>▓ <█░>▒ ▓█▒ ▓<▒/█ ▓░▓░ ▓▒░ █░▒░ █▓█░",
-      speed: 180,
-    });
-    target.start();
-    target.reveal(8500, 100);
-  }, []);
 
   // timer for the preloader
   useEffect(() => {
