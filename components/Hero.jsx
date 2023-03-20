@@ -8,13 +8,13 @@ const Hero = ({ heading, message }) => {
       <div className="h-screen w-full text-slate-100 flex justify-center items-center flex-col xxl:grid xxl:grid-cols-12">
         <div className="w-[35rem] mx-auto  h-full flex justify-center   col-start-3 col-end-6  flex-col tracking-wide">
           <h2 className="mb-2 text-4xl font-bold tracking-tight leading-none  ">
-            Hello, It's Me
+            Hello, It&apos;s Me
           </h2>
           <h1 className="mb-4 text-7xl font-bold tracking-normal leading-none ">
             Onur Belek
           </h1>
           <h1 className="mb-4 text-4xl font-bold tracking-normal leading-none flex items-center">
-            And I'm a&nbsp;
+            And I&apos;m a&nbsp;
             <Typewriter
               options={{
                 autoStart: true,
@@ -47,11 +47,11 @@ const Hero = ({ heading, message }) => {
               type="button"
               data-te-ripple-init
               data-te-ripple-color="light"
-              class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-500 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-linkedin hover:shadow-linkedin/60 "
+              className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-500 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-linkedin hover:shadow-linkedin/60 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
+                className="h-4 w-4"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -63,7 +63,7 @@ const Hero = ({ heading, message }) => {
               type="button"
               data-te-ripple-init
               data-te-ripple-color="light"
-              class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-500 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-github hover:shadow-github/60"
+              className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-500 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-github hover:shadow-github/60"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,11 +79,11 @@ const Hero = ({ heading, message }) => {
               type="button"
               data-te-ripple-init
               data-te-ripple-color="light"
-              class="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-500 ease-in-out focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-[#c13584] hover:shadow-lg hover:shadow-instagram/60 "
+              className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-500 ease-in-out focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-[#c13584] hover:shadow-lg hover:shadow-instagram/60 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
+                className="h-4 w-4"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
