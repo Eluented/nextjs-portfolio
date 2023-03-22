@@ -131,7 +131,6 @@ h1 {
   color: #dbd8d6;
   h1 {
     text-transform: uppercase;
-    font-family: 'Monsterrat', sans-serif;
   }
   h2 {
     text-transform: uppercase;
@@ -150,7 +149,7 @@ h1 {
   transform: translateX(-50%) skewX(-35deg);
   clip-path: circle(100%);
   z-index: 1;
-  background: conic-gradient(at right bottom, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+  background: radial-gradient(at right center, rgb(56, 189, 248), rgb(49, 46, 129));
 }
 
 .panels .panel {

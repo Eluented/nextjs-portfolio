@@ -125,7 +125,7 @@ export default function Home() {
 
           <main className="page-main">
             <div className="loader-wrapper middle">
-              <h1 className="full-stack-dev text-5xl font-bold sm:text-6xl mb-3">
+              <h1 className="full-stack-dev text-5xl font-bold sm:text-6xl mb-3 tracking-wide">
                 Onur Belek{" "}
               </h1>
               <h2 className="full-stack-dev text-2xl ">
