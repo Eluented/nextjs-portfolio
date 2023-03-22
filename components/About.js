@@ -5,29 +5,29 @@ export default function About() {
   return (
     <>
       <Parallax
-        bgImage="/lads.png"
-        strength={-400}
+        bgImage="/sky.jfif"
+        strength={0}
         bgImageStyle={{
           backgroundPosition: "center",
           objectFit: "cover",
           backgroundSize: "cover",
         }}
-        alt="Background Image of Mountains"
+        alt="Background Gradient"
       >
         {" "}
         <div
-          id="about"
-          className="bg-black/70 h-screen md:min-h-[45rem] xl:h-[50rem]"
+          id="aboutme"
+          className="bg-black/70 min-h-screen md:min-h-[45rem] xl:h-[50rem] flex justify-center items-center"
         >
-          <div className="flex flex-col justify-center items-center w-full h-full">
+          <div className="flex flex-col justify-center items-center w-full h-full py-10">
             <h1 className="md:text-5xl text-4xl text-center  font-semibold underline underline-offset-8 decoration-cyan-500 ">
               Ambition
             </h1>
-            <p className="md:text-2xl mt-5 text-center md:px-24 hidden md:block ">
+            <p className="md:text-2xl mt-5 text-center lg:px-24 px-5 xs:px-10 md:px-16">
               My ultimate goal is to make a positive impact in the tech industry
               and use my knowledge and skills to contribute to the world in a
-              meaningful way. I am excited to apply my skills to real-world
-              projects and to become the best version of myself.
+              meaningful way. <span className="hidden xl:inline-block ">I am excited to apply my skills to real-world
+              projects and to become the best version of myself.</span>
             </p>
 
             {/* <p className="md:text-2xl text-xl mt-5 text-center md:px-24 block md:hidden px-6 ">
@@ -53,7 +53,7 @@ export default function About() {
                     />
                   </svg>
                 </div>
-                <p className="md:text-2xl mt-1 text-lg">Independent Learner</p>
+                <p className="md:text-2xl mt-1 text-lg">Self-Learner</p>
               </div>
               <div className="p-4 flex flex-col justify-center items-center">
                 <div className="support-svg-container w-16 h-16">

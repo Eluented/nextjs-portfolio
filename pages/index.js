@@ -103,10 +103,16 @@ export default function Home() {
       {preloader ? (
         <>
           <Head>
-            <title>Onur | Full-Stack Developer</title>
-            <meta name="description" content="Junior Full-Stack Developer" />
-            <meta name="keywords" content="Onur Belek" />
-            <link rel="icon" href="/favicon.ico" />
+            <title>Onur Belek</title>
+            <meta
+              name="description"
+              content="Meet Onur Belek - a talented Java automation engineer and full-stack developer with a passion for continuous learning and improvement. Explore his personal portfolio to see his impressive skills, experience, and projects. From automation solutions to full-stack development, Onur can tackle any challenge with expertise and drive. Don't miss out on the chance to work with one of the best - check out Onur's portfolio now!"
+            />
+            <meta
+              name="keywords"
+              content="Onur Belek, Java automation, Full-stack development, Continuous learning, Problem-solving, Tech trends, Versatility, Automation solutions, Software engineering, Agile methodology"
+            />
+            <link rel="icon" href="/letter-o3.ico" />
           </Head>
           <ul className="panels">
             <li className="panel"></li>
@@ -122,20 +128,34 @@ export default function Home() {
               <h1 className="full-stack-dev text-5xl font-bold sm:text-6xl mb-3">
                 Onur Belek{" "}
               </h1>
-              <h2 className="full-stack-dev text-2xl">Fullstack Developer</h2>
+              <h2 className="full-stack-dev text-2xl ">
+                Java Automation Engineer
+              </h2>
             </div>
           </main>
         </>
       ) : (
         <>
+          <Head>
+            <title>Onur Belek | Java Automation Engineer</title>
+            <meta
+              name="description"
+              content="Meet Onur Belek - a talented Java automation engineer and full-stack developer with a passion for continuous learning and improvement. Explore his personal portfolio to see his impressive skills, experience, and projects. From automation solutions to full-stack development, Onur can tackle any challenge with expertise and drive. Don't miss out on the chance to work with one of the best - check out Onur's portfolio now!"
+            />
+            <meta
+              name="keywords"
+              content="Onur Belek, Java automation, Full-stack development, Continuous learning, Problem-solving, Tech trends, Versatility, Automation solutions, Software engineering, Agile methodology"
+            />
+            <link rel="icon" href="/letter-o3.ico" />
+          </Head>
           <Navbar />
-          <div className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
+          <div className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black w-full h-full">
             <Hero />
-            <About/>
-            <Timeline/>
-            <Projects/>
-            <ContactMe/>
-            <Footer/>
+            <About />
+            <Timeline />
+            <Projects />
+            <ContactMe />
+            <Footer />
           </div>
         </>
       )}

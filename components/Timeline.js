@@ -1,10 +1,12 @@
 import { React, useEffect } from "react";
 
-
 export default function Timeline() {
   return (
     <>
-      <div className="antialiased relative">
+      <div className="antialiased relative" id="timeline">
+        <h1 className="text-5xl font-bold pt-6 pb-2 md:text-center  border-separate   rounded-full underline underline-offset-8 decoration-cyan-500 pl-10 md:pl-0">
+          Resume
+        </h1>
         <div className="">
           {/* First Timestamp */}
           <div className="relative container mx-auto px-6 flex flex-col space-y-8 lg:space-y-28 pb-16 md:pb-12">
@@ -45,7 +47,6 @@ export default function Timeline() {
                       Key Modules:
                     </span>
                     &nbsp;Research Design, Research Methods and Statistics.
-                    
                   </p>
                 </div>
               </div>

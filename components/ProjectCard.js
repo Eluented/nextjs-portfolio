@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function ProjectCard({ title, description, imgUrl, linkUrl }) {
-console.log(title, description, imgUrl, linkUrl)
+  console.log(title, description, imgUrl, linkUrl);
   return (
-    <Link href={`${linkUrl}`}>
+    <a href={`${linkUrl}`} target="_blank" rel="noreferrer">
       <div className="proj-imgbx cursor-pointer">
         <img src={imgUrl} alt="crazy" />
         <div className="proj-txtx">
@@ -13,6 +13,6 @@ console.log(title, description, imgUrl, linkUrl)
           <span>{description}</span>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }

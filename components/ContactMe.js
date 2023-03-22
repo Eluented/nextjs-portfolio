@@ -3,6 +3,7 @@ import {
   Button,
   Checkbox,
   Container,
+  Flex,
   FormControl,
   FormErrorMessage,
   FormLabel,
@@ -88,13 +89,13 @@ export default function ContactMe() {
   };
   return (
     <>
-      <div className="pl-[8vw] md:pl-0 ">
-        <h1 className="text-5xl font-bold py-6 md:text-center  border-separate   rounded-full underline underline-offset-8 decoration-cyan-500">
+      <div className="pl-10 md:pl-0 py-10" id="contact">
+        <h1 className="text-5xl font-bold py-6 md:text-center  border-separate   rounded-full underline underline-offset-8 decoration-cyan-500 ">
           Contact
         </h1>
-        <p className="md:text-center">
+        <p className="md:text-center pr-5 tracking-wide">
           Submit the form below to ask me anything or shoot me an email at:
-          email@email.com
+          <span className="block tracking-wider mt-1 ">onurbelek@outlook.com</span>
         </p>
       </div>
       <div id="contact">
@@ -177,22 +178,33 @@ export default function ContactMe() {
                 name="message"
                 rows={4}
                 value={contactState.message}
-                placeholder="Let us know how we can help you"
+                placeholder="Let me know how I can help you"
                 required
                 onChange={handleChange}
                 size={"lg"}
                 className="contact-input"
               />
             </FormControl>
-            <Button
-              aria-label="Contact Submit"
-              isDisabled={formSubmitDisable}
-              isLoading={contactState.isLoading}
-              onClick={handleSubmit}
-              className="form-button"
-            >
-              Submit
-            </Button>
+            <Flex align="center" justify="center">
+              <Button
+                aria-label="Contact Submit"
+                isDisabled={formSubmitDisable}
+                isLoading={contactState.isLoading}
+                onClick={handleSubmit}
+                className="form-button  duration-500 rounded-full mt-4"
+                paddingX={"24"}
+                paddingY={2}
+                boxShadow="base"
+                overflow="hidden"
+                bgColor="#0891b2"
+                _hover={{
+                  bgColor: "#0e7490",
+                }}
+                rounded="full"
+              >
+                Submit
+              </Button>
+            </Flex>
           </Container>
         </div>
       </div>

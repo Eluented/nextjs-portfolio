@@ -42,13 +42,12 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-black/40 pb-16">
-      <div className="pl-[8vw] md:pl-0 ">
-      <h1 className="text-5xl font-bold py-6 md:text-center  border-separate   rounded-full underline underline-offset-8 decoration-cyan-500">
-        Work
+    <div id="projects" className="bg-black/40 pb-16">
+      <h1 className="text-5xl font-bold py-6 md:text-center  border-separate   rounded-full underline underline-offset-8 decoration-cyan-500 pl-10 md:pl-0 ">
+        Projects
       </h1>
-      <p className="md:text-center">Check out some of my recent work</p>
-      </div>
+      <p className="md:text-center pl-10 md:pl-0">Check out some of my recent work</p>
+
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3  mt-5 px-5 ">
           {projects.map((project, index) => {

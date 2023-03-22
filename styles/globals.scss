@@ -39,7 +39,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--darkblue);
   color: var(--white);
-
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -126,7 +127,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   transition: "all 0.25s ease-in-out";
-  background-color: #000000;
+  background-color: radial-gradient(at center bottom, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
   color: #dbd8d6;
   h1 {
     text-transform: uppercase;
@@ -135,7 +136,7 @@ h1 {
   h2 {
     text-transform: uppercase;
     font-family: "Bodoni Moda", serif;
-    font-style: italic;
+
   }
 }
 
@@ -149,7 +150,7 @@ h1 {
   transform: translateX(-50%) skewX(-35deg);
   clip-path: circle(100%);
   z-index: 1;
-  background: var(--lightgray);
+  background: conic-gradient(at right bottom, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
 }
 
 .panels .panel {
@@ -160,7 +161,7 @@ h1 {
   width: var(--panel-width);
   transform: scaleY(0);
   transform-origin: top;
-  background: var(--darkblue);
+  background: conic-gradient(at right center, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
 }
 
 .panels .panel:nth-child(even) {
@@ -334,4 +335,30 @@ h1 {
     transition-duration: 500ms; 
     border-radius: 9999px; 
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+  }
+
+  .active {
+    background-color: #06b6d4;
+    transition-duration: 500ms;
+  }
+
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #2449de;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 17px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: radial-gradient(at right center, rgb(56, 189, 248), rgb(49, 46, 129));
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: radial-gradient(at right center, rgb(29, 136, 250), rgb(49, 46, 129));
   }

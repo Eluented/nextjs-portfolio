@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     screens: {
       "xxxs": "300px",
+      "bannerPadding": "394px",
       "xxs": "430px",
       "xs": "480px", 
       "sm": "640px",
