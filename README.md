@@ -1,6 +1,7 @@
 # Next.js Portfolio Page
 [![Netlify Status](https://api.netlify.com/api/v1/badges/581247e3-e161-4c38-8ce1-942a4b7f9007/deploy-status)](https://app.netlify.com/sites/onurbelekportfolio/deploys)
 
+// LEGACY 
 # Screenshots 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/97059717/201504371-17a4721a-aa62-4756-a481-1491bb88576d.png" align="center" style="width: 100%" />
