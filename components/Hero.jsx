@@ -27,9 +27,9 @@ const Hero = () => {
                   loop: true,
                   delay: 60,
                   strings: [
-                    "Junior Java SDET.",
                     "Full Stack Developer",
-                    "Tech Enthusiast.",
+                    "Automation Tester",
+                    "Tech Enthusiast",
                   ],
                   wrapperClassName: "text-cyan-500 ",
                   skipAddStyles: true,
@@ -40,12 +40,7 @@ const Hero = () => {
           </div>
           <div className="short-description hidden xxl:flex">
             <p className="mt-1">
-              I am a self-taught web developer who is currently attending Sparta
-              Global to become a{" "}
-              <span className="text-cyan-500 font-bold">
-                Java automation engineer
-              </span>
-              .{" "}
+              I am a ambitious <span className="text-cyan-500 font-bold">Web Developer and Tester</span> who is striving to improve myself 1% a day.
             </p>
           </div>
           <div className="gap-8 mt-3 hidden xxl:flex">

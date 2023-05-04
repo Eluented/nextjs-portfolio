@@ -120,7 +120,7 @@ export default function Timeline() {
                 ></div>
                 <div className="test  bg-slate-100 p-6 rounded-lg shadow-md  tracking-wide">
                   <span className="font-bold text-cyan-600 text-sm tracking-wide">
-                    Sparta Global: Feb 2023 - Now
+                    Sparta Global: Feb 2023 - April 2023
                   </span>
                   <h1 className="text-2xl font-bold pt-1 text-black">
                     Junior Test Automation Engineer
@@ -129,8 +129,13 @@ export default function Timeline() {
                     <span className="font-bold text-cyan-600 text-sm tracking-wide">
                       Technical Skills:
                     </span>{" "}
-                    Agile & Scrum, Java, Unit Testing (JUnit), File I/O, JDBC,
-                    REST APIs, Spring Boot, Thymeleaf, Bootstrap
+                    ISTQB certified, JUnit and Rest Assured for API testing,
+                    databases including JDBC and SQL.
+                    <p className="pt-2 text-black">
+                      Web testing using Selenium, Cucumber, and collaboration
+                      tools such as Jira, BDD, TDD, SOLID principles, and design
+                      patterns
+                    </p>
                   </p>
                 </div>
               </div>
