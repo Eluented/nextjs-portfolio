@@ -130,11 +130,10 @@ export default function Timeline() {
                       Technical Skills:
                     </span>{" "}
                     ISTQB certified, JUnit and Rest Assured for API testing,
-                    databases including JDBC and SQL.
+                    databases including JDBC and SQL. Proficiency in applying software design principles such as SOLID and utilizing design patterns to create robust and maintainable software solutions.
                     <p className="pt-2 text-black">
-                      Web testing using Selenium, Cucumber, and collaboration
-                      tools such as Jira, BDD, TDD, SOLID principles, and design
-                      patterns
+                      Web testing using Selenium, Cucumber,BDD, TDD and collaboration
+                      tools such as Jira.
                     </p>
                   </p>
                 </div>
