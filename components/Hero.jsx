@@ -216,7 +216,7 @@ const Hero = () => {
               width={500}
               height={500}
               priority
-              quality={30}
+              quality={50}
               className="rounded-full hover:shadow-2xl hover:shadow-cyan-600/20 mb-5"
               alt="Picture of Onur Belek"
             />
