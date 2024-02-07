@@ -27,8 +27,8 @@ const Hero = () => {
                   loop: true,
                   delay: 60,
                   strings: [
+                    "Frontend Engineer",
                     "Full Stack Developer",
-                    "Automation Tester",
                     "Tech Enthusiast",
                   ],
                   wrapperClassName: "text-cyan-500 ",
@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
           <div className="short-description hidden xxl:flex">
             <p className="mt-1">
-              I am a ambitious <span className="text-cyan-500 font-bold">Web Developer and Tester</span> who is striving to improve myself 1% a day.
+              I am a ambitious <span className="text-cyan-500 font-bold">Web Developer </span> who is striving to improve myself 1% a day.
             </p>
           </div>
           <div className="gap-8 mt-3 hidden xxl:flex">
@@ -215,7 +215,10 @@ const Hero = () => {
               src="/onurS2.png"
               width={500}
               height={500}
+              priority
+              quality={30}
               className="rounded-full hover:shadow-2xl hover:shadow-cyan-600/20 mb-5"
+              alt="Picture of Onur Belek"
             />
           </div>
         </div>

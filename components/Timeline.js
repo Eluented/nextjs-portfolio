@@ -78,7 +78,7 @@ export default function Timeline() {
                 ></div>
                 <div className="test bg-slate-100 p-6 rounded-lg shadow-md  tracking-wide">
                   <span className="font-bold text-cyan-600 text-sm tracking-wide">
-                    La Fosse Academy: March 2022 - June 2022
+                    La Fosse Academy: March 2022 - Sept 2022
                   </span>
                   <h1 className="text-2xl font-bold pt-1 text-black">
                     Full-Stack Engineer Trainee
@@ -120,20 +120,25 @@ export default function Timeline() {
                 ></div>
                 <div className="test  bg-slate-100 p-6 rounded-lg shadow-md  tracking-wide">
                   <span className="font-bold text-cyan-600 text-sm tracking-wide">
-                    Sparta Global: Feb 2023 - April 2023
+                    Sparta Global: Feb 2023 - October 2023
                   </span>
                   <h1 className="text-2xl font-bold pt-1 text-black">
-                    Junior Test Automation Engineer
+                    Frontend Engineer
                   </h1>
                   <p className="pt-1 text-black">
                     <span className="font-bold text-cyan-600 text-sm tracking-wide">
                       Technical Skills:
                     </span>{" "}
-                    ISTQB certified, JUnit and Rest Assured for API testing,
-                    databases including JDBC and SQL. Proficiency in applying software design principles such as SOLID and utilizing design patterns to create robust and maintainable software solutions.
+                    Implemented Agile methodologies for iterative development,
+                    enhancing features and user interactions.
                     <p className="pt-2 text-black">
-                      Web testing using Selenium, Cucumber,BDD, TDD and collaboration
-                      tools such as Jira.
+                      {" "}
+                      Utilized React, SCSS, and Tailwind CSS for responsive
+                      frontend designs, delivering engaging interfaces.
+                    </p>
+                    <p className="pt-2 text-black">
+                      Developed server-side logic with Python and Flask,
+                      connecting to databases and creating APIs.
                     </p>
                   </p>
                 </div>
