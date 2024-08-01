@@ -27,9 +27,9 @@ const Hero = () => {
                   loop: true,
                   delay: 60,
                   strings: [
+                    "Software Engineer",
                     "Frontend Engineer",
                     "Full Stack Developer",
-                    "Tech Enthusiast",
                   ],
                   wrapperClassName: "text-cyan-500 ",
                   skipAddStyles: true,

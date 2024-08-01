@@ -37,16 +37,17 @@ export default function Timeline() {
                 ></div>
                 <div className="test bg-slate-100 p-6 rounded-lg shadow-md  tracking-wide">
                   <span className="font-bold text-cyan-600 text-sm tracking-wide">
-                    University of Nottingham: 2019-2021
+                    University of Nottingham: 2018-2021
                   </span>
                   <h1 className="text-2xl font-bold pt-1 text-black">
-                    Medical Physiology and Therapeutics
+                    Computer Science
                   </h1>
                   <p className="pt-1 text-black">
                     <span className="font-bold text-cyan-600 text-sm tracking-wide">
                       Key Modules:
                     </span>
-                    &nbsp;Research Design, Research Methods and Statistics.
+                    &nbsp;Data Structures and Algorithms, Artificial
+                    Intelligence and Machine Learning, Big Data Analytics.
                   </p>
                 </div>
               </div>
@@ -78,7 +79,7 @@ export default function Timeline() {
                 ></div>
                 <div className="test bg-slate-100 p-6 rounded-lg shadow-md  tracking-wide">
                   <span className="font-bold text-cyan-600 text-sm tracking-wide">
-                    La Fosse Academy: March 2022 - Sept 2022
+                    La Fosse Academy: Nov 2022 - Apr 2022
                   </span>
                   <h1 className="text-2xl font-bold pt-1 text-black">
                     Full-Stack Engineer Trainee
@@ -120,26 +121,64 @@ export default function Timeline() {
                 ></div>
                 <div className="test  bg-slate-100 p-6 rounded-lg shadow-md  tracking-wide">
                   <span className="font-bold text-cyan-600 text-sm tracking-wide">
-                    Sparta Global: Feb 2023 - October 2023
+                    Sparta Global: Jun 2022 - Sept 2023
                   </span>
                   <h1 className="text-2xl font-bold pt-1 text-black">
-                    Frontend Engineer
+                    Graduate Software Engineer
                   </h1>
                   <p className="pt-1 text-black">
                     <span className="font-bold text-cyan-600 text-sm tracking-wide">
                       Technical Skills:
                     </span>{" "}
-                    Implemented Agile methodologies for iterative development,
-                    enhancing features and user interactions.
-                    <p className="pt-2 text-black">
-                      {" "}
-                      Utilized React, SCSS, and Tailwind CSS for responsive
-                      frontend designs, delivering engaging interfaces.
-                    </p>
-                    <p className="pt-2 text-black">
-                      Developed server-side logic with Python and Flask,
-                      connecting to databases and creating APIs.
-                    </p>
+                    Architected and developed full-stack web applications using
+                    React, TypeScript, FastAPI, MongoDB, OpenAI API, and WebEx
+                    bots to streamline building management for Sparta's Client.
+                    Enhanced operational efficiency with predictive maintenance
+                    and real-time data analytics.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Fourth Timestop */}
+            <div className="relative z-10 ">
+              <div className="devSVG svg-container w-[6rem] h-[6rem] p-4 rounded-full shadow-md  bg-cyan-600 xs:absolute md:mx-auto md:left-0 md:right-0 peopleSVG">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.9}
+                  stroke="currentColor"
+                  className="w-full h-full"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"
+                  />
+                </svg>
+              </div>
+
+              <div className="bubble2 text-bubble relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 ml-auto md:pl-16 ">
+                <div
+                  className="absolute inset-0 left-9 h-4 w-4 transform rotate-45 bg-slate-100 xs:top-11 xs:left-26 md:left-14"
+                  aria-hidden="true"
+                ></div>
+                <div className="test bg-slate-100 p-6 rounded-lg shadow-md  tracking-wide">
+                  <span className="font-bold text-cyan-600 text-sm tracking-wide">
+                    Meiyo Solutions: Oct 2023 - Now
+                  </span>
+                  <h1 className="text-2xl font-bold pt-1 text-black">
+                    Software Engineer
+                  </h1>
+                  <p className="pt-1 text-black">
+                    <span className="font-bold text-cyan-600 text-sm tracking-wide">
+                      Technical Skills:
+                    </span>{" "}
+                    Full Stack Engineer on the Product Engineering team, using
+                    React Native, TypeScript, Next.js, and AWS to develop
+                    full-stack features for car dealership software on web and
+                    mobile.
                   </p>
                 </div>
               </div>

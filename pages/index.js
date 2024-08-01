@@ -129,7 +129,7 @@ export default function Home() {
                 Onur Belek{" "}
               </h1>
               <h2 className="full-stack-dev text-2xl ">
-                Frontend Engineer
+                Software Engineer
               </h2>
             </div>
           </main>
@@ -137,7 +137,7 @@ export default function Home() {
       ) : (
         <>
           <Head>
-            <title>Onur Belek | Frontend Engineer</title>
+            <title>Onur Belek | Software Engineer</title>
             <meta
               name="description"
               content="Meet Onur Belek - a Full Stack Developer and Tester with a passion for continuous learning and improvement. Explore his personal portfolio to see his impressive skills, experience, and projects. From automation solutions to full-stack development, Onur can tackle any challenge with expertise and drive. Don't miss out on the chance to work with one of the best - check out Onur's portfolio now!"
