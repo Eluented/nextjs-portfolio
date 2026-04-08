@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cf:whoami": "dotenv -e .env.wrangler -- wrangler whoami",
+    "cf:deploy": "dotenv -e .env.wrangler -- wrangler deploy"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.2",
@@ -15,10 +17,10 @@
     "@emotion/styled": "^11.10.6",
     "framer-motion": "^9.0.2",
     "gsap": "^3.11.4",
-    "next": "12.2.2",
+    "next": "^15.5.12",
     "nodemailer": "^6.9.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.4.0",
     "react-parallax": "^3.5.1",
     "react-scroll": "^1.8.9",
@@ -29,9 +31,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.2",
+    "dotenv-cli": "^11.0.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.12",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.6"
+    "tailwindcss": "^3.1.6",
+    "wrangler": "^4.78.0"
   }
 }

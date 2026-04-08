@@ -1,27 +1,10 @@
-import React, { useState, useContext } from "react";
-import {
-  Button,
-  Checkbox,
-  Container,
-  Flex,
-  FormControl,
-  FormErrorMessage,
-  FormLabel,
-  Input,
-  Select,
-  Text,
-  Textarea,
-} from "@chakra-ui/react";
-import { sendContactForm } from "../utils/api";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useRouter } from "next/router";
 
 export default function ContactMe() {
-  const router = useRouter();
-
   const [validEmail, setValidEmail] = useState(false);
-  const [isChecked, setIsChecked] = useState(false);
   const [touched, setTouched] = useState({});
   const [contactState, setContactState] = useState({
     email: "",
@@ -38,48 +21,44 @@ export default function ContactMe() {
     !contactState.email ||
     !contactState.subject ||
     !contactState.message ||
-    !validEmail;
-
-  const handleSubmit = async () => {
-    setContactState((prev) => ({
-      ...prev,
-      isLoading: true,
-    }));
-
-    try {
-      await sendContactForm({
-        subject: contactState.subject,
-        plan: contactState.plan,
-        message: contactState.message,
-        email: contactState.email,
-      });
-      setContactState({
-        email: "",
-        plan: "",
-        subject: "",
-        message: "",
-        isLoading: false,
-        error: "",
-      });
-      toast.success("Message has been sent", {
-        position: "bottom-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        draggable: true,
-        progress: undefined,
-      });
-    } catch (err) {
-      setContactState((prev) => ({
-        ...prev,
-        isLoading: false,
-        error: err.message,
-      }));
-    }
-  };
+    !validEmail ||
+    contactState.isLoading;
 
   const validateEmail = (email) =>
     /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+
+  const buildMailtoLink = () => {
+    const subject = encodeURIComponent(contactState.subject);
+    const body = encodeURIComponent(
+      [
+        `From: ${contactState.email}`,
+        "",
+        contactState.message,
+      ].join("\n")
+    );
+
+    return `mailto:onurbelek@outlook.com?subject=${subject}&body=${body}`;
+  };
+
+  const handleSubmit = () => {
+    window.location.href = buildMailtoLink();
+    setContactState({
+      email: "",
+      subject: "",
+      message: "",
+      isLoading: false,
+      error: "",
+    });
+
+    toast.info("Your email client is opening", {
+      position: "bottom-center",
+      autoClose: 2500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
 
   const handleChange = (e) => {
     if (e.target.name === "email") {
@@ -88,126 +67,101 @@ export default function ContactMe() {
     setContactState({ ...contactState, [e.target.name]: e.target.value });
   };
   return (
-    <>
-      <div className="pl-10 md:pl-0 py-10" id="contact">
-        <h1 className="text-5xl font-bold py-6 md:text-center  border-separate   rounded-full underline underline-offset-8 decoration-cyan-500 ">
-          Contact
-        </h1>
-        <p className="md:text-center pr-5 tracking-wide">
-          Submit the form below to ask me anything or shoot me an email at:
-          <span className="block tracking-wider mt-1 ">onurbelek@outlook.com</span>
-        </p>
-      </div>
-      <div id="contact">
-        {/* Toast Container */}
-        <ToastContainer
-          position="bottom-center"
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
+    <section id="contact" className="section-space pb-24">
+      <ToastContainer
+        position="bottom-center"
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
 
-        {/* Contact Us Form */}
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md  ">
-          {/* ERROR HANDLER */}
-          {contactState.error && (
-            <Text color="red.300" my={4} fontSize="xl">
-              {contactState.error}
-            </Text>
-          )}
-          <Container action="#" className="space-y-8 ">
-            <FormControl isRequired isInvalid={touched.email && !validEmail}>
-              <FormLabel className="mb-2 text-base font-medium">
-                Your email
-              </FormLabel>
-              <Input
-                color="gray.900"
-                errorBorderColor="red.500"
-                type="text"
-                id="email"
-                name="email"
-                value={contactState.email}
-                className="contact-input"
-                variant="outline"
-                placeholder="name@email.com"
-                required
-                onChange={handleChange}
-                onBlur={onBlur}
-                focusBorderColor="purple.300"
-                bgColor="gray.50"
-                size={"lg"}
-              />
-              <FormErrorMessage className="text-red-500 -mb-1">
-                Enter a valid email address
-              </FormErrorMessage>
-            </FormControl>
-
-            <FormControl isRequired className="w-full">
-              <FormLabel className="mb-2 mt-5 text-base font-medium">
-                Subject
-              </FormLabel>
-              <Input
-                color="gray.900"
-                className="contact-input"
-                type="text"
-                id="subject"
-                name="subject"
-                value={contactState.subject}
-                placeholder="What's this about?"
-                required
-                onChange={handleChange}
-                bgColor="gray.50"
-                focusBorderColor="purple.300"
-                size={"lg"}
-              />
-            </FormControl>
-            <FormControl isRequired className="w-full">
-              <FormLabel className="mb-2 mt-6 text-base font-medium">
-                Message
-              </FormLabel>
-              <Textarea
-                color="gray.900"
-                focusBorderColor="purple.300"
-                bgColor="gray.50"
-                type="text"
-                id="message"
-                name="message"
-                rows={4}
-                value={contactState.message}
-                placeholder="Let me know how I can help you"
-                required
-                onChange={handleChange}
-                size={"lg"}
-                className="contact-input"
-              />
-            </FormControl>
-            <Flex align="center" justify="center">
-              <Button
-                aria-label="Contact Submit"
-                isDisabled={formSubmitDisable}
-                isLoading={contactState.isLoading}
-                onClick={handleSubmit}
-                className="form-button  duration-500 rounded-full mt-4"
-                paddingX={"24"}
-                paddingY={2}
-                boxShadow="base"
-                overflow="hidden"
-                bgColor="#0891b2"
-                _hover={{
-                  bgColor: "#0e7490",
-                }}
-                rounded="full"
-              >
-                Submit
-              </Button>
-            </Flex>
-          </Container>
+      <div className="container-edge grid gap-8 lg:grid-cols-[0.9fr_1fr]">
+        <div>
+          <p className="section-kicker">Contact</p>
+          <h2 className="section-title">Let&apos;s build something people remember.</h2>
+          <p className="section-copy">
+            If you need a website for your business, a sharper product experience, or help improving search visibility and rankings, send me a message and I will get back to you quickly.
+          </p>
+          <div className="glass-card mt-8 rounded-3xl p-5">
+            <p className="text-xs uppercase tracking-[0.2em] text-white/65">Email</p>
+            <a href="mailto:onurbelek@outlook.com" className="mt-2 inline-block text-lg font-semibold text-cyan-300">
+              onurbelek@outlook.com
+            </a>
+            <p className="mt-3 text-sm text-slate-300">Website design, development, SEO focused improvements, and performance tuning available for a fee.</p>
+          </div>
         </div>
+
+        <motion.form
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.45 }}
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (!formSubmitDisable) {
+              setContactState((prev) => ({
+                ...prev,
+                isLoading: true,
+              }));
+              handleSubmit();
+            }
+          }}
+          className="glass-card rounded-3xl p-6"
+        >
+          {contactState.error && <p className="mb-4 text-sm text-red-300">{contactState.error}</p>}
+
+          <label htmlFor="email" className="mb-2 block text-sm font-semibold text-white/90">
+            Your email
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value={contactState.email}
+            placeholder="name@email.com"
+            onChange={handleChange}
+            onBlur={onBlur}
+            className="input-modern"
+            required
+          />
+          {touched.email && !validEmail && <p className="mt-2 text-sm text-red-300">Enter a valid email address</p>}
+
+          <label htmlFor="subject" className="mb-2 mt-5 block text-sm font-semibold text-white/90">
+            Subject
+          </label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            value={contactState.subject}
+            placeholder="What is this about?"
+            onChange={handleChange}
+            className="input-modern"
+            required
+          />
+
+          <label htmlFor="message" className="mb-2 mt-5 block text-sm font-semibold text-white/90">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            value={contactState.message}
+            placeholder="Tell me about your idea, role, or project goals"
+            onChange={handleChange}
+            className="textarea-modern"
+            required
+          />
+
+          <button type="submit" className="pill-button primary-btn mt-6" disabled={formSubmitDisable}>
+            {contactState.isLoading ? "Sending..." : "Send Message"}
+          </button>
+        </motion.form>
       </div>
-    </>
+    </section>
   );
 }

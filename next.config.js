@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: false,
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  output: "export",
+  images: {
+    unoptimized: true,
   },
 };
 

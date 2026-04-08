@@ -1,0 +1,32 @@
+{
+  "name": "onur-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "wrangler deploy --dry-run",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "wrangler deploy",
+    "upload": "wrangler deploy --dry-run",
+    "preview": "wrangler dev",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
+  },
+  "dependencies": {
+    "next": "16.1.5",
+    "react": "19.1.5",
+    "react-dom": "19.1.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.39",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "tailwindcss": "^4",
+    "typescript": "^5.7.4",
+    "wrangler": "^4.80.0"
+  }
+}

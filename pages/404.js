@@ -7,11 +7,13 @@ const NotFound = () => {
     const router = useRouter()
 
     useEffect(() => {
-        setTimeout(() => {
+        const timeoutId = setTimeout(() => {
             // router.go(-1)
             router.push('/');
-        }, 5000)
-    }, [])
+        }, 9000)
+
+        return () => clearTimeout(timeoutId)
+    }, [router])
 
     return (
         <>
@@ -20,14 +22,36 @@ const NotFound = () => {
                 <meta name="description" content="Junior Full-Stack Developer" />
                 <meta name="keywords" content="Onur Belek" />
                 <link rel="icon" href="/favicon.ico" />
-                meta
             </Head>
             
-            <div className="not-found">
-                <h1>Oops...</h1>
-                <h2>That page cannot be found</h2>
-                <p>Go back to the <Link href="/"><a>Home Page</a></Link></p>
-            </div>
+            <section className="notfound-page section-space pt-40 md:pt-44">
+                <div className="container-edge">
+                    <div className="notfound-shell glass-card">
+                        <p className="notfound-kicker">Navigation anomaly</p>
+                        <h1 className="notfound-code">404</h1>
+                        <h2 className="notfound-title">This page has gone walkabout.</h2>
+                        <p className="notfound-copy">
+                            We checked every corner of the internet and only found a confused biscuit.
+                            No worries, we can get you back to civilisation.
+                        </p>
+
+                        <div className="notfound-actions">
+                            <Link href="/" className="pill-button primary-btn">
+                                Take Me Home
+                            </Link>
+                            <button
+                                type="button"
+                                className="pill-button secondary-btn"
+                                onClick={() => router.back()}
+                            >
+                                Go Back
+                            </button>
+                        </div>
+
+                        <p className="notfound-meta">Auto-redirecting to the home page in about 9 seconds.</p>
+                    </div>
+                </div>
+            </section>
         </>
 
     )

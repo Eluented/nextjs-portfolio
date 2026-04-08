@@ -1,11 +1,12 @@
 import "../styles/globals.scss";
-import { ThemeProvider, theme, ChakraProvider } from "@chakra-ui/react";
+import Cursor from "../components/Cursor";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={theme}>
+    <>
+      <Cursor />
       <Component {...pageProps} />
-    </ThemeProvider>
+    </>
   );
 }
 
