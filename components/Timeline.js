@@ -19,9 +19,9 @@ const timeline = [
   {
     date: "2022 - 2023",
     title: "Sparta Global",
-    role: "Graduate Software Engineer",
+    role: "Automation Test Engineer",
     summary:
-      "Delivered full-stack systems with React, TypeScript, FastAPI, and MongoDB, including AI-driven automation features.",
+      "Built and maintained Java-based automated test frameworks using JUnit, Selenium and Cucumber.",
   },
   {
     date: "2023 - Present",
